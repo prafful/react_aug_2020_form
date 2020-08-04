@@ -20,6 +20,8 @@ class AddFriend extends React.Component {
     }
     
     render() { 
+      
+        
         return (
             <div>
                 <h3>Add Friend!!!!</h3>
@@ -28,6 +30,8 @@ class AddFriend extends React.Component {
                     <input type='text' id="friendname" onChange={this.getName}></input>
                     <br></br>
                     Friend Name: { this.state.friendname }
+                    <br></br>
+                    
                 </form>
             </div>
           );

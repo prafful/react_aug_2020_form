@@ -12,6 +12,10 @@ class Menu extends React.Component {
                 <Link to='/about'>About</Link>
                 &nbsp;
                 <Link to='/addfriend'>Add Friend</Link>
+                &nbsp;
+                <Link to='/lifecycle'>Lifecycle</Link>
+                &nbsp;
+                <Link to='/blogs'>Blogs</Link>
 
 
             </div>
