@@ -44,7 +44,7 @@ class Blogs extends React.Component {
         console.log('deleteBlogWithId called!!!! for id: ' + id)
         //this.setState({allblogs: })
         var tempAllBlogs = this.state.allblogs.filter(blog=>{
-            return blog.id != id
+            return blog.id !== id
         })
         console.log(tempAllBlogs)
         this.setState({allblogs: tempAllBlogs})
