@@ -10,8 +10,15 @@ class FriendDetail extends React.Component {
        
     }
 
+    deleteCurrentFriend=()=>{
+        console.log("delete friend with id: " + this.props.id);
+        this.props.deleteId(this.props.id)
+    }
 
-   
+    editFriendWithId=()=>{
+        console.log("edit friend with id: " + this.props.id);
+        this.props.editId(this.props.id)
+    }
   
     render() { 
         return ( 
@@ -20,12 +27,17 @@ class FriendDetail extends React.Component {
                 <td>{this.props.name} </td>
                 <td>{this.props.since}</td>
                 <td>
-                    <button >Change Since + </button>
+                    <button >Since + </button>
                 </td>
                 <td>
-                    <button >Change Since - </button>
+                    <button >Since - </button>
                 </td>
-               
+                <td>
+                    <button onClick={this.editFriendWithId}>Edit</button>
+                </td>
+                <td>
+                    <button onClick={this.deleteCurrentFriend}>Del</button>
+                </td>
                 
             </tr>    
         )

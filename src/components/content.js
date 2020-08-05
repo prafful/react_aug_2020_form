@@ -5,6 +5,7 @@ import About from './about';
 import AddFriend from './addfriend';
 import LifeCycle from './lifecycle';
 import Blogs from './blogs';
+import EditFriend from './editfriend';
 
 class Content extends React.Component {
     state = {  }
@@ -17,6 +18,7 @@ class Content extends React.Component {
                 <Route path='/addfriend' component={AddFriend}></Route>
                 <Route path='/lifecycle' component={LifeCycle}></Route>
                 <Route path='/blogs' component={Blogs}></Route>
+                <Route path='/editfriend' component={EditFriend}></Route>
             </Switch>
          );
     }

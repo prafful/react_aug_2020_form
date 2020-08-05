@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 class Menu extends React.Component {
 
+    id=1
+
     render() { 
         return ( 
             <div>
@@ -16,6 +18,7 @@ class Menu extends React.Component {
                 <Link to='/lifecycle'>Lifecycle</Link>
                 &nbsp;
                 <Link to='/blogs'>Blogs</Link>
+           
 
 
             </div>

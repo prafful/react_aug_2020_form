@@ -1,19 +1,19 @@
 {
   "allfriends": [
     {
-      "id": 1,
-      "name": "OBB",
-      "since": 10
-    },
-    {
-      "id": 2,
-      "name": "CAS",
-      "since": 2
+      "name": "OBBO",
+      "since": "11",
+      "id": 1
     },
     {
       "name": "OWIOH",
       "since": 13,
       "id": 3
+    },
+    {
+      "name": "Adi",
+      "since": "8",
+      "id": 4
     }
   ],
   "allfriendsdetails": [
