@@ -44,7 +44,7 @@ class Friend extends React.Component {
 
     deleteFriendWithId=(id)=>{
         console.log('delete friend for received id: ' + id);
-        axios.delete('http://localhost:3000/allfriends' + '/' + id)
+        axios.delete('http://localhost:3000/allfriends/' + id)
                 .then(response=>{
                      console.log(response)
                      //show deleteSuccess message

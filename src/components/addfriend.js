@@ -47,9 +47,9 @@ class AddFriend extends React.Component {
         
         return (
             <div>
-                <h3>Add Friend!!!!</h3>
+                <h3>Add New Friend!!!!</h3>
                 <form>
-                    <label>Name: </label>
+                    <label>Full Name: </label>
                     <input type='text' id="friendname" onChange={this.getName}></input>
                     <br></br>
                     <label>Since: </label>
