@@ -1,39 +1,16 @@
 {
   "allfriends": [
     {
-      "name": "OBBOK",
-      "since": "11",
+      "name": "Adi",
+      "since": "8",
+      "friendimage": "1.jpg",
       "id": 1
     },
     {
-      "name": "OWIOH",
-      "since": 13,
-      "id": 3
-    },
-    {
-      "name": "Adi",
-      "since": "8",
-      "id": 4
-    },
-    {
-      "name": "dasd",
-      "since": "6",
-      "id": 5
-    },
-    {
-      "name": "Tumkuru Halwa",
-      "since": "4",
-      "id": 7
-    },
-    {
-      "name": "OBO",
-      "since": "2",
-      "id": 8
-    },
-    {
-      "name": "OK",
-      "since": "8",
-      "id": 9
+      "name": "praful",
+      "since": "33",
+      "friendimage": "2.jpg",
+      "id": 2
     }
   ],
   "allfriendsdetails": [

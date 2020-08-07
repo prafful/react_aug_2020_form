@@ -8,6 +8,7 @@ class AddFriend extends React.Component {
         this.state ={
             friendname:'',
             friendsince:0,
+            friendimage:'',
             nameError:'',
             sinceError:'',
             buttonStatus: false
@@ -17,7 +18,7 @@ class AddFriend extends React.Component {
     checkValidation=()=>{
        
        let nameerror = ''
-       let sinceerror = ''
+       //let sinceerror = ''
        if(this.state.friendname.includes('#')){
            console.log('name having #!');
            nameerror = 'name having invalid #'
@@ -66,7 +67,8 @@ class AddFriend extends React.Component {
         console.log('Add friend via axios and post')
         let friendRequestBody = {
             "name": this.state.friendname,
-            "since": this.state.friendsince
+            "since": this.state.friendsince,
+            "friendimage":this.state.friendimage
         }
         axios.post('http://localhost:3000/allfriends', friendRequestBody)
                 .then(response=>{
@@ -75,6 +77,14 @@ class AddFriend extends React.Component {
                 }, error=>{
                     console.error(error);
                 })
+    }
+
+    getImage=(event)=>{
+        console.log(event);
+        console.log(event.target);
+        console.log(event.target.value);
+        console.log(event.target.value.substr(12));
+        this.setState({friendimage: event.target.value.substr(12)})
     }
     
     render() { 
@@ -91,6 +101,9 @@ class AddFriend extends React.Component {
                     <label>Since: </label>
                     <input type='number' id="friendsince" onChange={this.getSince}></input>
                     {this.state.sinceError}
+                    <br></br>
+                    <label>Friend Image: </label>
+                    <input type="file" onChange={this.getImage} multiple accept='image/*' />
                     <br></br>
                     <button type="button" onClick={this.addFriend} disabled={this.state.buttonStatus}>Add Friend</button>
                     <br></br>

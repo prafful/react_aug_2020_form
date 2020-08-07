@@ -70,6 +70,7 @@ class Friend extends React.Component {
                         id={friend.id}
                         name={friend.name}
                         since={friend.since}
+                        profile={friend.friendimage}
                         deleteId={this.deleteFriendWithId}
                         editId={this.editFriendWithId}
                     >
@@ -96,7 +97,7 @@ class Friend extends React.Component {
 
     getSearch=(e)=>{
         let searchV = e.target.value
-        if(searchV==''){
+        if(searchV===''){
             this.getAllFriends()
         }
         this.setState({searchValue: searchV})
@@ -114,6 +115,7 @@ class Friend extends React.Component {
             return ( 
                 <div>
                    <div>
+                  
                        <label>Search: </label>
                        <input type="text" value={this.state.searchValue} onChange={this.getSearch}></input>
                        <br></br>
@@ -126,6 +128,7 @@ class Friend extends React.Component {
                         <thead>
                             <tr>
                                 <th>Id</th>
+                                <th>Image</th>
                                 <th>Name</th>
                                 <th>Since</th>
                                 <th colSpan='4'>Actions</th>

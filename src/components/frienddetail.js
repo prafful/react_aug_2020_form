@@ -30,9 +30,17 @@ import React from 'react';
     }
   
     render() { 
+        let imgStyle ={
+            width:'100px',
+            borderRadius:'10px'
+        }
         return ( 
             <tr>
+         
                 <td>{this.props.id} </td>
+                <td>
+                    <img src={"images/" + this.props.profile} style={imgStyle}></img>
+                </td>
                 <td>{this.props.name} </td>
                 <td>{this.props.since}</td>
                 <td>
