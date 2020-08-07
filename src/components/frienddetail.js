@@ -1,12 +1,16 @@
 import React from 'react';
+//import { withRouter } from "react-router-dom";    //un-comment this if working with withRouter
 
-
-class FriendDetail extends React.Component {
+//add export before class if working with withRouter
+ class FriendDetail extends React.Component {
    
     constructor(props){
         super(props)
         this.state ={
         }
+
+        console.log('In Friend Detail...');
+        console.log(this.props);
        
     }
 
@@ -16,8 +20,13 @@ class FriendDetail extends React.Component {
     }
 
     editFriendWithId=()=>{
-        console.log("edit friend with id: " + this.props.id);
-        this.props.editId(this.props.id)
+        //this also works
+        //this.props.history.push({ //un-comment this if working with withRouter
+        //    pathname: '/editfriend', //un-comment this if working with withRouter
+        //    state: {myid: this.props.id}  //un-comment this if working with withRouter
+        //})    //un-comment this if working with withRouter
+        console.log("edit friend with id: " + this.props.id);// comment this if working with withRouter
+        this.props.editId(this.props.id)//comment this if working with withRouter
     }
   
     render() { 
@@ -45,4 +54,5 @@ class FriendDetail extends React.Component {
        
 }
  
-export default FriendDetail;
+export default FriendDetail;//comment this if working with withRouter
+//export default withRouter(FriendDetail)//un-comment this if working with withRouter
